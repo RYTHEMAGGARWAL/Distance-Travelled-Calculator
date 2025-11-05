@@ -517,20 +517,7 @@ export default function AirDistanceCalculator() {
                 <li><strong>Option 3:</strong> Mix both - city names OR coordinates</li>
                 <li><strong>Option 4:</strong> Malformed rows like "Delhi,Mumbai" or """City1,Sub,City2,Sub""" (we auto-split and handle commas in names)</li>
               </ul>
-              <p><strong>Example CSV (standard):</strong></p>
-              <pre style={{ background: '#f1f5f9', padding: '1rem', borderRadius: '8px', fontSize: '0.9rem' }}>
-from,to
-Delhi,Mumbai
-"Mayur Vihar Phase 1, Delhi","Mayur Vihar Phase 2, Delhi"
-12.9716,77.5946,19.0760,72.8777
-              </pre>
-              <p><strong>Also supports your format:</strong></p>
-              <pre style={{ background: '#f1f5f9', padding: '1rem', borderRadius: '8px', fontSize: '0.9rem' }}>
-"from,to"
-"Delhi,Mumbai"
-"""MayurViharPhase1,Delhi"",""MayurViharPhase2,Delhi"""
-"12.9716,77.5946,19.0760,72.8777"
-              </pre>
+              
               <p><em>💡 Intra-city now works with Nominatim geocoding. Add spaces in names for better accuracy (e.g., "Mayur Vihar Phase 1, Delhi"). Max ~200 rows recommended for free processing.</em></p>
             </div>
 
